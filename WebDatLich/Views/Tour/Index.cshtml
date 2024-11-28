@@ -18,6 +18,7 @@
                     {
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                             <a class="position-relative d-block overflow-hidden" href="">
+                                <a asp-controller="Checkout" asp-action="Index">
                                 <!-- Hiển thị tên tour -->
                                 <h5 class="mb-0">@tour.TourName</h5>
 
@@ -33,6 +34,7 @@
 
                                 <!-- Hiển thị giá -->
                                 <p><strong>Price:</strong> @tour.Price.ToString("C")</p>
+                            </a>
                             </a>
                         </div>
                     }
